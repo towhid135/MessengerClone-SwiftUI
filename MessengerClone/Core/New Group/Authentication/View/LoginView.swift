@@ -3,6 +3,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    
     var body: some View {
         NavigationStack{
             VStack{
@@ -13,12 +14,7 @@ struct LoginView: View {
                     .frame(width: 150,height: 150)
                 
                 VStack{
-                    TextField("Enter you email", text: $email)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal,24)
+                    CustomTextField(variant: .firstTextField, text: email)
                     SecureField("Enter your password", text: $password)
                         .font(.subheadline)
                         .padding(12)
@@ -37,16 +33,8 @@ struct LoginView: View {
                 }
                 .frame(maxWidth: .infinity,alignment: .trailing)
                 
-                Button {
+                CustomButton(variant: .textButton, size: .large, buttonContent: "Login", color: .buttonColor3){
                     print("pressed")
-                } label: {
-                    Text("Login")
-                        .foregroundColor(.white)
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .buttonView
-                    
-                    
                 }
                 .padding(.vertical,20)
                 

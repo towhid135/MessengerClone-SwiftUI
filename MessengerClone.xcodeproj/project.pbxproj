@@ -7,24 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490848572A5D28C800F0F43B /* ColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490848562A5D28C800F0F43B /* ColorPallete.swift */; };
+		490848592A5D414B00F0F43B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490848582A5D414B00F0F43B /* ColorExtension.swift */; };
+		4908485C2A5D60DF00F0F43B /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4908485B2A5D60DF00F0F43B /* Image.xcassets */; };
+		490848662A5D672400F0F43B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490848652A5D672400F0F43B /* CustomButton.swift */; };
 		491732C42A5A884700C178E6 /* MessengerCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491732C32A5A884700C178E6 /* MessengerCloneApp.swift */; };
 		491732C62A5A884700C178E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491732C52A5A884700C178E6 /* ContentView.swift */; };
-		491732C82A5A884900C178E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491732C72A5A884900C178E6 /* Assets.xcassets */; };
+		491732C82A5A884900C178E6 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491732C72A5A884900C178E6 /* Color.xcassets */; };
 		491732CB2A5A884900C178E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491732CA2A5A884900C178E6 /* Preview Assets.xcassets */; };
 		491732DB2A5AA14800C178E6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491732DA2A5AA14800C178E6 /* LoginView.swift */; };
 		491732DE2A5AAEBE00C178E6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491732DD2A5AAEBE00C178E6 /* Image.swift */; };
 		491732E02A5AD7C600C178E6 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491732DF2A5AD7C600C178E6 /* ViewExtension.swift */; };
+		49B8DD892A5E6B2000CA7822 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD882A5E6B2000CA7822 /* TextButton.swift */; };
+		49B8DD8D2A5E80E900CA7822 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD8C2A5E80E900CA7822 /* CustomButtonStyle.swift */; };
+		49B8DD902A5EBD8E00CA7822 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD8F2A5EBD8E00CA7822 /* CustomTextField.swift */; };
+		49B8DD932A5EC96E00CA7822 /* FirstTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD922A5EC96E00CA7822 /* FirstTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		490848562A5D28C800F0F43B /* ColorPallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallete.swift; sourceTree = "<group>"; };
+		490848582A5D414B00F0F43B /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		4908485B2A5D60DF00F0F43B /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		490848652A5D672400F0F43B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		491732C02A5A884700C178E6 /* MessengerClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491732C32A5A884700C178E6 /* MessengerCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCloneApp.swift; sourceTree = "<group>"; };
 		491732C52A5A884700C178E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		491732C72A5A884900C178E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		491732C72A5A884900C178E6 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		491732CA2A5A884900C178E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		491732DA2A5AA14800C178E6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		491732DD2A5AAEBE00C178E6 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		491732DF2A5AD7C600C178E6 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		49B8DD882A5E6B2000CA7822 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		49B8DD8C2A5E80E900CA7822 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		49B8DD8F2A5EBD8E00CA7822 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		49B8DD922A5EC96E00CA7822 /* FirstTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4908485A2A5D608F00F0F43B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				490848612A5D648600F0F43B /* Colors */,
+				490848602A5D647600F0F43B /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		490848602A5D647600F0F43B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4908485B2A5D60DF00F0F43B /* Image.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		490848612A5D648600F0F43B /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				491732C72A5A884900C178E6 /* Color.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		490848622A5D66B900F0F43B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				49B8DD8E2A5EBD6800CA7822 /* CustomTextField */,
+				490848632A5D670200F0F43B /* CustomButtom */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		490848632A5D670200F0F43B /* CustomButtom */ = {
+			isa = PBXGroup;
+			children = (
+				490848652A5D672400F0F43B /* CustomButton.swift */,
+				490848642A5D670D00F0F43B /* ButtonVariant */,
+			);
+			path = CustomButtom;
+			sourceTree = "<group>";
+		};
+		490848642A5D670D00F0F43B /* ButtonVariant */ = {
+			isa = PBXGroup;
+			children = (
+				49B8DD882A5E6B2000CA7822 /* TextButton.swift */,
+			);
+			path = ButtonVariant;
+			sourceTree = "<group>";
+		};
 		491732B72A5A884700C178E6 = {
 			isa = PBXGroup;
 			children = (
@@ -57,13 +124,14 @@
 		491732C22A5A884700C178E6 /* MessengerClone */ = {
 			isa = PBXGroup;
 			children = (
+				49B8DD8A2A5E80B700CA7822 /* StyleGuide */,
+				4908485A2A5D608F00F0F43B /* Resources */,
 				491732DC2A5AAE9E00C178E6 /* Asset */,
 				491732D52A5A9FE700C178E6 /* App */,
 				491732D42A5A9FE200C178E6 /* Core */,
 				491732D32A5A9FD700C178E6 /* Model */,
 				491732D12A5A9FC200C178E6 /* Service */,
 				491732D62A5AA01D00C178E6 /* Extensions */,
-				491732C72A5A884900C178E6 /* Assets.xcassets */,
 				491732C92A5A884900C178E6 /* Preview Content */,
 			);
 			path = MessengerClone;
@@ -94,6 +162,7 @@
 		491732D42A5A9FE200C178E6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				490848622A5D66B900F0F43B /* Component */,
 				491732D82A5AA0F000C178E6 /* Authentication */,
 				491732D72A5AA0EF00C178E6 /* Root */,
 			);
@@ -112,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				491732DF2A5AD7C600C178E6 /* ViewExtension.swift */,
+				490848582A5D414B00F0F43B /* ColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -145,8 +215,42 @@
 			isa = PBXGroup;
 			children = (
 				491732DD2A5AAEBE00C178E6 /* Image.swift */,
+				490848562A5D28C800F0F43B /* ColorPallete.swift */,
 			);
 			path = Asset;
+			sourceTree = "<group>";
+		};
+		49B8DD8A2A5E80B700CA7822 /* StyleGuide */ = {
+			isa = PBXGroup;
+			children = (
+				49B8DD8B2A5E80C700CA7822 /* CustomButtonStyle */,
+			);
+			path = StyleGuide;
+			sourceTree = "<group>";
+		};
+		49B8DD8B2A5E80C700CA7822 /* CustomButtonStyle */ = {
+			isa = PBXGroup;
+			children = (
+				49B8DD8C2A5E80E900CA7822 /* CustomButtonStyle.swift */,
+			);
+			path = CustomButtonStyle;
+			sourceTree = "<group>";
+		};
+		49B8DD8E2A5EBD6800CA7822 /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				49B8DD912A5EC94900CA7822 /* TextFieldVariant */,
+				49B8DD8F2A5EBD8E00CA7822 /* CustomTextField.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		49B8DD912A5EC94900CA7822 /* TextFieldVariant */ = {
+			isa = PBXGroup;
+			children = (
+				49B8DD922A5EC96E00CA7822 /* FirstTextField.swift */,
+			);
+			path = TextFieldVariant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +312,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				491732CB2A5A884900C178E6 /* Preview Assets.xcassets in Resources */,
-				491732C82A5A884900C178E6 /* Assets.xcassets in Resources */,
+				4908485C2A5D60DF00F0F43B /* Image.xcassets in Resources */,
+				491732C82A5A884900C178E6 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,9 +325,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				491732DB2A5AA14800C178E6 /* LoginView.swift in Sources */,
+				49B8DD902A5EBD8E00CA7822 /* CustomTextField.swift in Sources */,
 				491732DE2A5AAEBE00C178E6 /* Image.swift in Sources */,
+				49B8DD8D2A5E80E900CA7822 /* CustomButtonStyle.swift in Sources */,
 				491732C62A5A884700C178E6 /* ContentView.swift in Sources */,
+				490848572A5D28C800F0F43B /* ColorPallete.swift in Sources */,
+				490848662A5D672400F0F43B /* CustomButton.swift in Sources */,
 				491732C42A5A884700C178E6 /* MessengerCloneApp.swift in Sources */,
+				49B8DD932A5EC96E00CA7822 /* FirstTextField.swift in Sources */,
+				49B8DD892A5E6B2000CA7822 /* TextButton.swift in Sources */,
+				490848592A5D414B00F0F43B /* ColorExtension.swift in Sources */,
 				491732E02A5AD7C600C178E6 /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
