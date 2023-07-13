@@ -24,7 +24,7 @@ struct BaseColor {
     let accent2 = Color(ColorName.accent2.rawValue)
     let neutral1 = Color(ColorName.neutral1.rawValue)
     let neutral2 = Color(ColorName.neutral2.rawValue)
-    let neutral3 = Color(ColorName.neutral2.rawValue)
+    let neutral3 = Color(ColorName.neutral3.rawValue)
 }
 
 struct TokenColor {
@@ -40,9 +40,9 @@ struct TokenColor {
     init(){
         self.textColor1 = baseColor.neutral1
         self.textColor2 = baseColor.neutral2
+        self.buttonTheme1 = baseColor.neutral1
+        self.buttonTheme2 = baseColor.neutral2
         self.buttonTheme3 = baseColor.neutral3
-        self.buttonTheme1 = baseColor.accent1
-        self.buttonTheme2 = baseColor.accent2
     }
 }
 

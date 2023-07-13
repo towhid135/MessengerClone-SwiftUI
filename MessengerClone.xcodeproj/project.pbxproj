@@ -18,6 +18,9 @@
 		491732DB2A5AA14800C178E6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491732DA2A5AA14800C178E6 /* LoginView.swift */; };
 		491732DE2A5AAEBE00C178E6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491732DD2A5AAEBE00C178E6 /* Image.swift */; };
 		491732E02A5AD7C600C178E6 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491732DF2A5AD7C600C178E6 /* ViewExtension.swift */; };
+		491D94CA2A600DC800F59FAD /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D94C92A600DC800F59FAD /* RegistrationView.swift */; };
+		491D94CD2A600F5C00F59FAD /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D94CC2A600F5C00F59FAD /* CustomSecureField.swift */; };
+		491D94D02A600FC500F59FAD /* FirstSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D94CF2A600FC500F59FAD /* FirstSecureField.swift */; };
 		49B8DD892A5E6B2000CA7822 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD882A5E6B2000CA7822 /* TextButton.swift */; };
 		49B8DD8D2A5E80E900CA7822 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD8C2A5E80E900CA7822 /* CustomButtonStyle.swift */; };
 		49B8DD902A5EBD8E00CA7822 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD8F2A5EBD8E00CA7822 /* CustomTextField.swift */; };
@@ -37,6 +40,9 @@
 		491732DA2A5AA14800C178E6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		491732DD2A5AAEBE00C178E6 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		491732DF2A5AD7C600C178E6 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		491D94C92A600DC800F59FAD /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		491D94CC2A600F5C00F59FAD /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		491D94CF2A600FC500F59FAD /* FirstSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSecureField.swift; sourceTree = "<group>"; };
 		49B8DD882A5E6B2000CA7822 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		49B8DD8C2A5E80E900CA7822 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		49B8DD8F2A5EBD8E00CA7822 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 		490848622A5D66B900F0F43B /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				491D94CB2A600F3400F59FAD /* CustomSecureField */,
 				49B8DD8E2A5EBD6800CA7822 /* CustomTextField */,
 				490848632A5D670200F0F43B /* CustomButtom */,
 			);
@@ -207,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				491732DA2A5AA14800C178E6 /* LoginView.swift */,
+				491D94C92A600DC800F59FAD /* RegistrationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +226,23 @@
 				490848562A5D28C800F0F43B /* ColorPallete.swift */,
 			);
 			path = Asset;
+			sourceTree = "<group>";
+		};
+		491D94CB2A600F3400F59FAD /* CustomSecureField */ = {
+			isa = PBXGroup;
+			children = (
+				491D94CC2A600F5C00F59FAD /* CustomSecureField.swift */,
+				491D94CE2A600F7000F59FAD /* SecureFieldVariant */,
+			);
+			path = CustomSecureField;
+			sourceTree = "<group>";
+		};
+		491D94CE2A600F7000F59FAD /* SecureFieldVariant */ = {
+			isa = PBXGroup;
+			children = (
+				491D94CF2A600FC500F59FAD /* FirstSecureField.swift */,
+			);
+			path = SecureFieldVariant;
 			sourceTree = "<group>";
 		};
 		49B8DD8A2A5E80B700CA7822 /* StyleGuide */ = {
@@ -239,8 +264,8 @@
 		49B8DD8E2A5EBD6800CA7822 /* CustomTextField */ = {
 			isa = PBXGroup;
 			children = (
-				49B8DD912A5EC94900CA7822 /* TextFieldVariant */,
 				49B8DD8F2A5EBD8E00CA7822 /* CustomTextField.swift */,
+				49B8DD912A5EC94900CA7822 /* TextFieldVariant */,
 			);
 			path = CustomTextField;
 			sourceTree = "<group>";
@@ -324,9 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491D94CD2A600F5C00F59FAD /* CustomSecureField.swift in Sources */,
 				491732DB2A5AA14800C178E6 /* LoginView.swift in Sources */,
 				49B8DD902A5EBD8E00CA7822 /* CustomTextField.swift in Sources */,
 				491732DE2A5AAEBE00C178E6 /* Image.swift in Sources */,
+				491D94CA2A600DC800F59FAD /* RegistrationView.swift in Sources */,
 				49B8DD8D2A5E80E900CA7822 /* CustomButtonStyle.swift in Sources */,
 				491732C62A5A884700C178E6 /* ContentView.swift in Sources */,
 				490848572A5D28C800F0F43B /* ColorPallete.swift in Sources */,
@@ -336,6 +363,7 @@
 				49B8DD892A5E6B2000CA7822 /* TextButton.swift in Sources */,
 				490848592A5D414B00F0F43B /* ColorExtension.swift in Sources */,
 				491732E02A5AD7C600C178E6 /* ViewExtension.swift in Sources */,
+				491D94D02A600FC500F59FAD /* FirstSecureField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

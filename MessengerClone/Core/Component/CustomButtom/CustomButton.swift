@@ -25,24 +25,17 @@ struct CustomButton:View {
         large = 360
     }
     
-    enum buttonColor:String {
-        case
-        buttonColor1 = "color-accent1",
-        buttonColor2 = "color-accent2",
-        buttonColor3 = "color-neutral3"
-    }
-    
     private let variant:buttonVariant
     private let size:buttonSize
     private let buttonContent:String
-    private let color:String
+    private let color:Color
     private let buttonAction: () -> Void
     
-    init(variant: buttonVariant,size:buttonSize,buttonContent:String,color:buttonColor,buttonAction: @escaping () -> Void) {
+    init(variant: buttonVariant,size:buttonSize,buttonContent:String,color:Color,buttonAction: @escaping () -> Void) {
         self.variant = variant
         self.size = size
         self.buttonContent = buttonContent
-        self.color = color.rawValue
+        self.color = color
         self.buttonAction = buttonAction
     }
     
@@ -59,7 +52,7 @@ struct CustomButton:View {
 
 struct CustomButton_Preview: PreviewProvider {
     static var previews: some View{
-        CustomButton(variant: .textButton, size: .small, buttonContent: "SignUp",color: .buttonColor1){
+        CustomButton(variant: .textButton, size: .small, buttonContent: "SignUp",color: .tokenColor.buttonTheme1){
             print("button pressed")
         }
     }

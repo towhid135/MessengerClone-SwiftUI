@@ -20,7 +20,7 @@ struct TextButton: View {
                     
             }
             .frame(width: buttonWidth,height: 44)
-            .background(Color(buttonColor))
+            .background(buttonColor)
             .cornerRadius(10)
         }
     }
@@ -31,10 +31,10 @@ struct TextButton: View {
     
     private let buttonWidth:CGFloat
     private let buttonTitle:String
-    private let buttonColor:String
+    private let buttonColor:Color
     private let buttonAction: () -> Void
  
-    init(buttonWidth:CGFloat,buttonTitle:String,buttonColor:String, buttonAction: @escaping () -> Void){
+    init(buttonWidth:CGFloat,buttonTitle:String,buttonColor:Color, buttonAction: @escaping () -> Void){
         self.buttonWidth = buttonWidth
         self.buttonTitle = buttonTitle
         self.buttonColor = buttonColor
@@ -44,7 +44,7 @@ struct TextButton: View {
 
 struct TextButton_Previews: PreviewProvider {
     static var previews: some View {
-        TextButton(buttonWidth: 360,buttonTitle: "Login",buttonColor: "color-accent1"){
+        TextButton(buttonWidth: 360,buttonTitle: "Login",buttonColor: .tokenColor.buttonTheme1){
             print("pressed")
         }
     }

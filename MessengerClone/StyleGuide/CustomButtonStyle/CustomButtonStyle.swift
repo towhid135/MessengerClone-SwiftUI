@@ -10,40 +10,40 @@ import SwiftUI
 struct CustomButtonStyle: View {
     var body: some View {
         VStack{
-            CustomButton(variant: .textButton, size: .small, buttonContent: "Login", color: .buttonColor1){
+            CustomButton(variant: .textButton, size: .small, buttonContent: "Login", color: .tokenColor.buttonTheme1){
                 print("pressed")
             }
-            CustomButton(variant: .textButton, size: .medium, buttonContent: "Login",color: .buttonColor1)
+            CustomButton(variant: .textButton, size: .medium, buttonContent: "Login",color: .tokenColor.buttonTheme1)
             {
                 print("pressed")
             }
-            CustomButton(variant: .textButton, size: .large, buttonContent: "Login",color: .buttonColor1)
-            {
-                print("pressed")
-            }
-            
-            CustomButton(variant: .textButton, size: .small, buttonContent: "Login", color: .buttonColor2)
-            {
-                print("pressed")
-            }
-            CustomButton(variant: .textButton, size: .medium, buttonContent: "Login",color: .buttonColor2)
-            {
-                print("pressed")
-            }
-            CustomButton(variant: .textButton, size: .large, buttonContent: "Login",color: .buttonColor2)
+            CustomButton(variant: .textButton, size: .large, buttonContent: "Login",color: .tokenColor.buttonTheme1)
             {
                 print("pressed")
             }
             
-            CustomButton(variant: .textButton, size: .small, buttonContent: "Login", color: .buttonColor3)
+            CustomButton(variant: .textButton, size: .small, buttonContent: "Login", color: .tokenColor.buttonTheme2)
             {
                 print("pressed")
             }
-            CustomButton(variant: .textButton, size: .medium, buttonContent: "Login",color: .buttonColor3)
+            CustomButton(variant: .textButton, size: .medium, buttonContent: "Login",color: .tokenColor.buttonTheme2)
             {
                 print("pressed")
             }
-            CustomButton(variant: .textButton, size: .large, buttonContent: "Login",color: .buttonColor3)
+            CustomButton(variant: .textButton, size: .large, buttonContent: "Login",color: .tokenColor.buttonTheme2)
+            {
+                print("pressed")
+            }
+            
+            CustomButton(variant: .textButton, size: .small, buttonContent: "Login", color: .tokenColor.buttonTheme3)
+            {
+                print("pressed")
+            }
+            CustomButton(variant: .textButton, size: .medium, buttonContent: "Login",color: .tokenColor.buttonTheme3)
+            {
+                print("pressed")
+            }
+            CustomButton(variant: .textButton, size: .large, buttonContent: "Login",color: .tokenColor.buttonTheme3)
             {
                 print("pressed")
             }
