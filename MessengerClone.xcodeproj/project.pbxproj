@@ -21,6 +21,9 @@
 		491D94CA2A600DC800F59FAD /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D94C92A600DC800F59FAD /* RegistrationView.swift */; };
 		491D94CD2A600F5C00F59FAD /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D94CC2A600F5C00F59FAD /* CustomSecureField.swift */; };
 		491D94D02A600FC500F59FAD /* FirstSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D94CF2A600FC500F59FAD /* FirstSecureField.swift */; };
+		492EFFB82A63AD4C00536440 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EFFB72A63AD4C00536440 /* InboxView.swift */; };
+		492EFFBB2A63B2F800536440 /* ChatHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EFFBA2A63B2F800536440 /* ChatHead.swift */; };
+		492EFFBE2A63BB0C00536440 /* ChatHeadWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492EFFBD2A63BB0C00536440 /* ChatHeadWithLabel.swift */; };
 		49B8DD892A5E6B2000CA7822 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD882A5E6B2000CA7822 /* TextButton.swift */; };
 		49B8DD8D2A5E80E900CA7822 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD8C2A5E80E900CA7822 /* CustomButtonStyle.swift */; };
 		49B8DD902A5EBD8E00CA7822 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD8F2A5EBD8E00CA7822 /* CustomTextField.swift */; };
@@ -43,6 +46,9 @@
 		491D94C92A600DC800F59FAD /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		491D94CC2A600F5C00F59FAD /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		491D94CF2A600FC500F59FAD /* FirstSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSecureField.swift; sourceTree = "<group>"; };
+		492EFFB72A63AD4C00536440 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		492EFFBA2A63B2F800536440 /* ChatHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHead.swift; sourceTree = "<group>"; };
+		492EFFBD2A63BB0C00536440 /* ChatHeadWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeadWithLabel.swift; sourceTree = "<group>"; };
 		49B8DD882A5E6B2000CA7822 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		49B8DD8C2A5E80E900CA7822 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		49B8DD8F2A5EBD8E00CA7822 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 		490848622A5D66B900F0F43B /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				492EFFBC2A63BA4900536440 /* ChatHeadWithLabel */,
+				492EFFB92A63B2DE00536440 /* ChatHead */,
 				491D94CB2A600F3400F59FAD /* CustomSecureField */,
 				49B8DD8E2A5EBD6800CA7822 /* CustomTextField */,
 				490848632A5D670200F0F43B /* CustomButtom */,
@@ -169,8 +177,9 @@
 		491732D42A5A9FE200C178E6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				490848622A5D66B900F0F43B /* Component */,
 				491732D82A5AA0F000C178E6 /* Authentication */,
+				492EFFB62A63AD2900536440 /* Inbox */,
+				490848622A5D66B900F0F43B /* Component */,
 				491732D72A5AA0EF00C178E6 /* Root */,
 			);
 			path = Core;
@@ -243,6 +252,30 @@
 				491D94CF2A600FC500F59FAD /* FirstSecureField.swift */,
 			);
 			path = SecureFieldVariant;
+			sourceTree = "<group>";
+		};
+		492EFFB62A63AD2900536440 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				492EFFB72A63AD4C00536440 /* InboxView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		492EFFB92A63B2DE00536440 /* ChatHead */ = {
+			isa = PBXGroup;
+			children = (
+				492EFFBA2A63B2F800536440 /* ChatHead.swift */,
+			);
+			path = ChatHead;
+			sourceTree = "<group>";
+		};
+		492EFFBC2A63BA4900536440 /* ChatHeadWithLabel */ = {
+			isa = PBXGroup;
+			children = (
+				492EFFBD2A63BB0C00536440 /* ChatHeadWithLabel.swift */,
+			);
+			path = ChatHeadWithLabel;
 			sourceTree = "<group>";
 		};
 		49B8DD8A2A5E80B700CA7822 /* StyleGuide */ = {
@@ -354,9 +387,12 @@
 				49B8DD902A5EBD8E00CA7822 /* CustomTextField.swift in Sources */,
 				491732DE2A5AAEBE00C178E6 /* Image.swift in Sources */,
 				491D94CA2A600DC800F59FAD /* RegistrationView.swift in Sources */,
+				492EFFB82A63AD4C00536440 /* InboxView.swift in Sources */,
+				492EFFBE2A63BB0C00536440 /* ChatHeadWithLabel.swift in Sources */,
 				49B8DD8D2A5E80E900CA7822 /* CustomButtonStyle.swift in Sources */,
 				491732C62A5A884700C178E6 /* ContentView.swift in Sources */,
 				490848572A5D28C800F0F43B /* ColorPallete.swift in Sources */,
+				492EFFBB2A63B2F800536440 /* ChatHead.swift in Sources */,
 				490848662A5D672400F0F43B /* CustomButton.swift in Sources */,
 				491732C42A5A884700C178E6 /* MessengerCloneApp.swift in Sources */,
 				49B8DD932A5EC96E00CA7822 /* FirstTextField.swift in Sources */,

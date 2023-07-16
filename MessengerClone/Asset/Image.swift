@@ -10,4 +10,5 @@ import Foundation
 struct image {
     static let messenger:String = "messenger-app-icon"
     static let facebook:String = "facebook-logo"
+    static let dummyProfile:String = "dummy-profile"
 }

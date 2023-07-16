@@ -12,6 +12,7 @@ struct LoginView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150,height: 150)
+                    .padding(.bottom,20)
                 
                 VStack{
                     CustomTextField(variant: .firstTextField,backgroundColor: Color(.systemGray6), text: email)
@@ -57,7 +58,8 @@ struct LoginView: View {
                 Spacer()
                 
                 NavigationLink{
-                    Text("Signup")
+                    RegistrationView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     HStack(spacing: 3){
                         Text("Don't have an account?")
