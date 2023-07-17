@@ -15,7 +15,7 @@ struct ChatHeadWithLabel: View {
     
     var body: some View {
         VStack{
-            ChatHead(imageLink: image.dummyProfile, size: size, isActive: true)
+            ChatHead(imageLink: image.dummyProfile, size: size, isActive: isActive)
             Text("Towhid")
                 .font(Font.system(size: scale(for: size)))
                 .foregroundColor(.gray)
