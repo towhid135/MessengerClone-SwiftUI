@@ -53,7 +53,7 @@ struct CustomButton:View {
 struct CustomButton_Preview: PreviewProvider {
     static var previews: some View{
         CustomButton(variant: .textButton, size: .small, buttonContent: "SignUp",color: .tokenColor.buttonTheme1){
-            print("button pressed")
+            print("app name: \(env.appName)")
         }
     }
 }

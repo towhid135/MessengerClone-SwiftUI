@@ -30,7 +30,8 @@ struct LoginView: View {
                 .frame(maxWidth: .infinity,alignment: .trailing)
                 
                 CustomButton(variant: .textButton, size: .large, buttonContent: "Login", color: .tokenColor.buttonTheme3){
-                    print("pressed")
+                    print("app name \(env.appName)")
+                    print("rootUrl: ",env.rootUrl)
                 }
                 .padding(.vertical,20)
                 

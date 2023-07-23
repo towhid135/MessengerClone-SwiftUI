@@ -11,7 +11,7 @@ struct TextButton: View {
     var body: some View {
         VStack{
             Button {
-                print("pressed")
+               buttonAction()
             } label: {
                 Text(buttonTitle)
                     .foregroundColor(.white)
