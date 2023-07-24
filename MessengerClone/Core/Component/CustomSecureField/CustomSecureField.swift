@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomSecureField: View {
-    @State private var password:String
+    @Binding private var password:String
     private var backgroundColor:Color
     private var variant:secureFieldVariant
     var body: some View {
@@ -24,10 +24,10 @@ struct CustomSecureField: View {
         }
     }
     
-    init(variant:secureFieldVariant,backgroundColor:Color,password: String) {
+    init(variant:secureFieldVariant,backgroundColor:Color,password: Binding<String>) {
         self.variant = variant
         self.backgroundColor = backgroundColor
-        self.password = password
+        self._password = password
         
     }
     
@@ -39,6 +39,6 @@ struct CustomSecureField: View {
 
 struct CustomSecureField_Previews: PreviewProvider {
     static var previews: some View {
-        CustomSecureField(variant: .firstSecureField,backgroundColor: Color(.systemGray6), password: "4567")
+        CustomSecureField(variant: .firstSecureField,backgroundColor: Color(.systemGray6), password: Binding.constant("456"))
     }
 }

@@ -29,9 +29,11 @@
 		499006AC2A6BD9F400768A9F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 499006AB2A6BD9F400768A9F /* FirebaseFirestore */; };
 		499006AE2A6BD9F400768A9F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 499006AD2A6BD9F400768A9F /* FirebaseFirestoreSwift */; };
 		499006B02A6BD9F400768A9F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 499006AF2A6BD9F400768A9F /* FirebaseStorage */; };
-		499006B82A6BDD1600768A9F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499006B72A6BDD1600768A9F /* AuthViewModel.swift */; };
 		499006BA2A6BDE0F00768A9F /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499006B92A6BDE0F00768A9F /* ProfileModel.swift */; };
 		49A218AE2A6D023A00CBB825 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A218AD2A6D023A00CBB825 /* Environment.swift */; };
+		49B8D9552A6E58D90061324E /* AuthAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8D9542A6E58D90061324E /* AuthAction.swift */; };
+		49B8D9572A6E6DB20061324E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8D9562A6E6DB20061324E /* LoginViewModel.swift */; };
+		49B8D9592A6E9C5C0061324E /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8D9582A6E9C5C0061324E /* RegistrationViewModel.swift */; };
 		49B8DD892A5E6B2000CA7822 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD882A5E6B2000CA7822 /* TextButton.swift */; };
 		49B8DD8D2A5E80E900CA7822 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD8C2A5E80E900CA7822 /* CustomButtonStyle.swift */; };
 		49B8DD902A5EBD8E00CA7822 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DD8F2A5EBD8E00CA7822 /* CustomTextField.swift */; };
@@ -68,12 +70,14 @@
 		492EFFBA2A63B2F800536440 /* ChatHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHead.swift; sourceTree = "<group>"; };
 		492EFFBD2A63BB0C00536440 /* ChatHeadWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeadWithLabel.swift; sourceTree = "<group>"; };
 		499006A62A6BD74D00768A9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		499006B72A6BDD1600768A9F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		499006B92A6BDE0F00768A9F /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		49A218A82A6CFD9600CBB825 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		49A218A92A6CFDA700CBB825 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		49A218AD2A6D023A00CBB825 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		49A218AF2A6D117900CBB825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49B8D9542A6E58D90061324E /* AuthAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAction.swift; sourceTree = "<group>"; };
+		49B8D9562A6E6DB20061324E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		49B8D9582A6E9C5C0061324E /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		49B8DD882A5E6B2000CA7822 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		49B8DD8C2A5E80E900CA7822 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		49B8DD8F2A5EBD8E00CA7822 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -334,7 +338,8 @@
 		499006B12A6BDC6B00768A9F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				499006B72A6BDD1600768A9F /* AuthViewModel.swift */,
+				49B8D9562A6E6DB20061324E /* LoginViewModel.swift */,
+				49B8D9582A6E9C5C0061324E /* RegistrationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 		499006BC2A6BE07100768A9F /* Action */ = {
 			isa = PBXGroup;
 			children = (
+				49B8D9542A6E58D90061324E /* AuthAction.swift */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -561,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				491D94CD2A600F5C00F59FAD /* CustomSecureField.swift in Sources */,
+				49B8D9592A6E9C5C0061324E /* RegistrationViewModel.swift in Sources */,
 				491732DB2A5AA14800C178E6 /* LoginView.swift in Sources */,
 				49B8DD902A5EBD8E00CA7822 /* CustomTextField.swift in Sources */,
 				49BC2B592A65515C0040D48C /* ContactListView.swift in Sources */,
@@ -580,13 +587,14 @@
 				492EFFBB2A63B2F800536440 /* ChatHead.swift in Sources */,
 				490848662A5D672400F0F43B /* CustomButton.swift in Sources */,
 				49A218AE2A6D023A00CBB825 /* Environment.swift in Sources */,
+				49B8D9572A6E6DB20061324E /* LoginViewModel.swift in Sources */,
 				49BC2B4D2A653B520040D48C /* InboxRowView.swift in Sources */,
-				499006B82A6BDD1600768A9F /* AuthViewModel.swift in Sources */,
 				491732C42A5A884700C178E6 /* MessengerCloneApp.swift in Sources */,
 				49B8DD932A5EC96E00CA7822 /* FirstTextField.swift in Sources */,
 				49E34C852A665E6300F4E74E /* SettingsOptionsViewModel.swift in Sources */,
 				49BC2B4B2A651A450040D48C /* ActiveNowView.swift in Sources */,
 				49B8DD892A5E6B2000CA7822 /* TextButton.swift in Sources */,
+				49B8D9552A6E58D90061324E /* AuthAction.swift in Sources */,
 				49E34C832A6651A200F4E74E /* SystemImageTextRowComp.swift in Sources */,
 				490848592A5D414B00F0F43B /* ColorExtension.swift in Sources */,
 				491732E02A5AD7C600C178E6 /* ViewExtension.swift in Sources */,

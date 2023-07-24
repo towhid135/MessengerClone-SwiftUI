@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = "towhid"
-    @State private var password = "dsldkflskdfllss"
+    @State var email:String = ""
+    @State private var password = ""
+    @StateObject private var loginViewModel = LoginViewModel()
     
     var body: some View {
         NavigationStack{
@@ -15,8 +16,8 @@ struct LoginView: View {
                     .padding(.bottom,20)
                 
                 VStack{
-                    CustomTextField(variant: .firstTextField,backgroundColor: Color(.systemGray6), text: email)
-                    CustomSecureField(variant: .firstSecureField, backgroundColor: Color(.systemGray6), password: password)
+                    CustomTextField(variant: .firstTextField,backgroundColor: Color(.systemGray6), text: $email)
+                    CustomSecureField(variant: .firstSecureField, backgroundColor: Color(.systemGray6), password: $password)
                 }
                 Button {
                     print("pressed")
@@ -30,8 +31,10 @@ struct LoginView: View {
                 .frame(maxWidth: .infinity,alignment: .trailing)
                 
                 CustomButton(variant: .textButton, size: .large, buttonContent: "Login", color: .tokenColor.buttonTheme3){
-                    print("app name \(env.appName)")
-                    print("rootUrl: ",env.rootUrl)
+                    print("email: \(email) pass: \(password)")
+//                    Task{
+//                        try await loginViewModel.login(withEmail: email, password: password)
+//                    }
                 }
                 .padding(.vertical,20)
                 

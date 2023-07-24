@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomTextField: View {
-    @State private var text:String
+    @Binding private var text:String
     private var variant:textFieldVariant
     private var backgroundColor:Color
     
@@ -23,10 +23,10 @@ struct CustomTextField: View {
     }
    
     
-    init(variant:textFieldVariant,backgroundColor:Color,text: String) {
+    init(variant:textFieldVariant,backgroundColor:Color,text: Binding<String>) {
         self.variant = variant
         self.backgroundColor = backgroundColor
-        self.text = text
+        self._text = text
     }
     
     private var customTextFieldBody: AnyView {
@@ -43,6 +43,6 @@ struct CustomTextField: View {
 
 struct CustomTextField_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTextField(variant: .firstTextField,backgroundColor: Color(.systemGray6),text: "towhid")
+        CustomTextField(variant: .firstTextField,backgroundColor: Color(.systemGray6),text: Binding.constant(""))
     }
 }
