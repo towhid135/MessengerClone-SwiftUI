@@ -31,7 +31,15 @@ struct LoginView: View {
                 .frame(maxWidth: .infinity,alignment: .trailing)
                 
                 CustomButton(variant: .textButton, size: .large, buttonContent: "Login", color: .tokenColor.buttonTheme3){
-                    print("email: \(email) pass: \(password)")
+                    Task{
+                        do{
+                            let res = try await AuthAction().fetchAlbums()
+                            print("DEBUG: albums: \(res)")
+                        }catch{
+                            print("DEBUG: album fetching error \(error)")
+                        }
+                    }
+//                    print("email: \(email) pass: \(password)")
 //                    Task{
 //                        try await loginViewModel.login(withEmail: email, password: password)
 //                    }
